@@ -1,0 +1,295 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+@font-face {
+	font-family: 'PFDinDisplayPro-Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('PFDinDisplayPro-Regular'), url('PFDinDisplayPro-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'PFDinDisplayPro-Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('PFDinDisplayPro-Bold'), url('PFDinDisplayPro-Bold.woff') format('woff');
+}
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    /* background-image: url(https://cdn.discordapp.com/attachments/712754778018545767/880616490812964884/unknown.png); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 105%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+main{
+    width: 250px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all 1s;
+    padding-bottom: 40px;
+    top: calc(100% - 125px);
+    margin-top: 5px;
+    left: 0px;
+}
+
+.normalHud-container {
+    height: 81px;
+}
+
+.hud-container {
+    height: 12px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+
+.hud-container img {
+    height: 17px;
+}
+
+.hudFill-container {
+    height: 50%;
+    width: 100%;
+    margin-left: 10px;
+    
+    background-color: rgba(255, 255, 255, 0.109);
+    border-radius: 1000px;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.hudFill {
+    height: 100%;
+    width: 50%;
+    border-radius: 1px;
+    transition: all .5s;
+}
+
+/* ------------------------------- */
+
+.hudFood-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+}
+
+/* ---------------------------------------------- */
+
+
+header {
+    width: 300px;
+    position: absolute;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    right: 40px;
+    
+}
+
+.infoText {
+	font-family: 'PFDinDisplayPro-Bold';
+    font-size: 14px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.infoText p span {
+    color: rgba(255, 255, 255, 0.541);
+}
+
+.infoText img {
+    margin-right: 5px;
+    height: 14px;
+}
+
+.infoFooter-container {
+    display: flex;
+    align-items: center;
+}
+
+/* ---------------------------------------------- */
+
+footer {
+    position: absolute;
+    right: 40px;
+
+    padding-bottom: 40px;
+    top: calc(100% - 60px);
+
+    display: flex;
+    align-items: center;
+
+    transition: all 1s;
+}
+
+footer p {
+	font-family: 'PFDinDisplayPro-Regular';
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.541);
+    margin-right: 5px;
+}
+
+.qTalk {
+    height: 13px;
+    width: 13px;
+    border-radius: 3px;
+    margin: 0px 3px;
+    background-color: white;
+}
+
+
+
+/* -------------------------------------------------------------------------------------- */
+
+.carHud-container {
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    right: -10px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    transition: all 1s;
+}
+
+.veloBar {
+    height: 279.2px;
+    width: 279.2px;
+    clip-path: path('M223.448477,218.666668Q195.793012,218.666668,142.837241,218.666668C89.881469,218.666668,82.108145,240.722757,59.759837,265.202592L53.448477,265.202592L56.492046,261.098522C78.840353,236.618687,86.613678,214.562598,139.569449,214.562598Q192.525221,214.562598,223.448477,214.562598L223.448477,218.666668Z');
+    background-color: rgba(255, 255, 255, 0.349);
+    position: absolute;
+   
+}
+
+.veloFill {
+    height: 100vh;
+    background-color: white;
+    transition: all .5s;
+    transform: translate(54px,102px);
+   
+}
+
+.veloText {
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.veloText h1 {
+    color: white;
+    font-family: 'PFDinDisplayPro-Bold';
+    font-size: 30px;
+}
+
+.veloText img {
+    height: 22px;
+    margin-right: 10px;
+    filter: invert(1);
+}
+
+.defaultVelo {
+    color: rgba(255, 255, 255, 0.335);
+}
+
+.kmText {
+    font-size: 16px;
+    margin-left: 2px;
+    color: rgba(255, 255, 255, 0.335);
+}
+
+/* ------------------------------------------------- */
+
+.gasText {
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.gasText img{
+    height: 15px;
+}
+
+.gasText p {
+    color: white;
+    font-family: 'PFDinDisplayPro-Bold';
+    margin-right: 5px;
+}
+
+.gasText p span {
+    color: rgba(255, 255, 255, 0.335);
+}
+
+.logo {
+    height: 120px;
+    align-self: flex-start;
+    position: absolute;
+    top: 30px;
+    opacity: 70%;
+} 
+
+/* 
+    PROGRESS BAR
+ */
+ #outerdiv {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.109);
+    left: 27px;
+    width: 223px;
+    height: 6px;
+    border-radius: 10px;
+}
+
+#innerdiv {
+    background-image: linear-gradient(white,white);
+    height: 6px;
+    width: 0%;
+    border-radius: 3px;
+}
+
+/* 
+    LOGO
+*/
+.logo-animation {
+    animation: rotate 1s ease-out;
+}
+  
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}

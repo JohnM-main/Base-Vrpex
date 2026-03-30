@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<head>
+
+    <link rel="stylesheet" href="ui.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,200&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container" style="display: none;">
+
+        <section id="left">
+
+            <div class="logo"> <img src="https://cdn.discordapp.com/attachments/852652377139576852/882005805715574884/Dashboard.png"></div>
+
+            <div class="icones">
+
+            <img src="https://cdn.discordapp.com/attachments/852652377139576852/882005805715574884/Dashboard.png" class="icon" data-display="dashboard" onclick="up(this)">
+
+        <br>
+
+            <img src="https://cdn.discordapp.com/attachments/852652377139576852/882006481682202664/Deposito.png" class="icon" data-display="depositar" onclick="up(this)">
+
+        <br>
+
+            <img src="https://cdn.discordapp.com/attachments/852652377139576852/882006482701402182/saque.png" class="icon" data-display="saque" onclick="up(this)">
+
+        <br>
+
+            <img src="https://cdn.discordapp.com/attachments/852652377139576852/882006483938730024/trans.png" class="icon" data-display="trans" onclick="up(this)">
+
+        <br>
+
+            <img src="https://cdn.discordapp.com/attachments/852652377139576852/882006600074801252/Debitos.png" class="icon" data-display="multa" onclick="up(this)">
+
+        </div>
+
+        </section>
+
+        <section id="center">
+
+        </section>
+
+        <section id="right">
+
+            <header>
+
+                <div class="title">
+
+                </div>
+
+                <div class="account">
+
+                    <div class="card-box">
+
+                        <div class="right-box">
+
+                            <div class="item-box">
+
+                                <div class="right-pic"></div>
+
+                                    <div class="identidade"><span>Marcello Toro</span></div>
+
+                                    <div class="card">
+                                        <div id="info">R$ </div><span class="carteira">NADA</span>
+                                    </div>
+
+                                    <div class="card2">
+                                        <div id="info">R$ </div><span class="currentBalance">NADA</span>
+                                    </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <footer>
+
+                <div class="up-box item-box" id="dashboard">
+
+                    <div class="olatitle">Bem-vindo(a), <span class="identidade">Marcello Toro</span> !</div>
+
+                    <div class="line"></div>
+
+                    <div class="dashboardtitle">Dashboard</div>
+
+                    <div class="item-info-box">
+
+                        <div class="botoesdh">
+
+                            <div class="depositodh" data-display="depositar" onclick="up(this)"></div>
+
+                            <div class="sacardh" data-display="saque" onclick="up(this)"></div>
+
+                            <div class="transdh" data-display="trans" onclick="up(this)"></div>
+
+                            <div class="multasdh" data-display="multa" onclick="up(this)"></div>
+
+                        </div>
+                        
+                        <div id="dntz1imginitanuncio"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="up-box item-box" id="multa123">
+
+                    <div class="item-info-box"> 
+
+                    </div>
+
+                </div>
+
+                <div class="up-box item-box" id="multa1233"><div class="item-info-box"></div></div>
+
+                <div class="up-box item-box" id="multa12333"><div class="item-info-box"></div></div>
+
+                <div class="up-box item-box" id="multa">
+
+                    <div class="olatitle">Pagar Multas</div>
+
+                    <div class="desctitle">Pague suas multas conosco!</div>
+
+                    <div class="line"></div>
+
+                    <div class="item-info-box">
+
+                        <div class="item">
+
+                            <div id="dntz1imgmultas"></div>
+
+                            <div class="item-input">
+
+                                <form class="input-modal" id="multas">
+
+                                    <input id="amount" class="amount" placeholder="R$ 100,00">
+
+                                    <button>Pagar</button>
+
+                                </form>
+
+                            </div>
+
+                          <div id="dntz1imgmultasanuncio"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="up-box item-box" id="saque" style="display: none;">
+
+                    <div class="olatitle">Saque</div>
+
+                    <div class="desctitle">Realize um saque de sua conta</div>
+
+                    <div class="line"></div>
+
+                    <div class="item-info-box">
+
+                        <div class="item">
+
+                            <div id="dntz1imgsacar"></div>
+
+                            <div class="item-input">
+
+
+
+                                <form class="input-modal" id="sacar">
+
+                                    <input id="amount" class="amount" placeholder="R$">
+
+                                    <button class="botaodepo">Sacar</button>
+
+                                </form>
+
+                            </div>
+
+                            <div class="quick">Saque Rapido</div>
+
+                        <div id="saquerapido1" data-value= "100" class="quick-actionss"><span></span>
+
+                        </div>
+
+                        <div id="saquerapido2" data-value= "500" class="quick-actionss1"><span></span>
+
+                        </div>
+
+                        <div id="saquerapido3" data-value= "1000" class="quick-actionss2"><span></span>
+
+                        </div>
+
+                        <div id="saquerapido4" data-value= "5000" class="quick-actionss3"><span></span>
+
+                        </div>
+
+                        <div id="dntz1imgsacaranuncio"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="up-box item-box" id="depositar" style="display: none;">
+
+                    <div class="olatitle">Depósito</div>
+
+                    <div class="desctitle">Realize depositos em sua conta.</div>
+
+                    <div class="line"></div>
+
+                        <div class="item-info-box">
+
+                            <div class="item">
+
+                                <div id="dntz1imgdepositar"></div>
+
+
+                                    <div class="item-input">
+
+                                        <form class="input-modal" id="depositar">
+
+                                            <input id="amount" class="amount" placeholder="R$">
+
+                                            <button class="botaodepo">Depositar</button>
+
+                                        </form>
+
+                                     </div>
+
+                                    <div class="quick">Depositar rapidamente</div>
+
+                                    <div id="depositorapido1" data-value= "100" class="quick-actionsd"><span></span>
+
+                                    </div>
+
+                                    <div id="depositorapido2" data-value= "1000" class="quick-actions1d"><span></span>
+
+                                    </div>
+
+                                    <div id="depositorapido3" data-value= "10000" class="quick-actions2d"><span></span>
+
+                                    </div>
+
+                                    <div id="depositorapido4" data-value= "100000" class="quick-actions3d"><span></span>
+
+                                    </div>
+
+                                    <div id="dntz1imgdepositaranuncio"></div>
+
+                            </div>
+
+                        </div>
+
+                </div>
+
+                <div class="up-box item-box" id="trans" style="display: none;">
+
+                    <div class="olatitle">Transferencia: </div>
+
+                    <div class="desctitle">Realize transferencias as outras pessoas.</div>
+
+                    <div class="line"></div>
+
+                        <div class="item-info-box">
+
+                            <div class="item">
+
+                                <div id="dntz1imgtrans"></div>
+
+                                    <div class="item-input">
+
+                                        <form class="input-modal" id="trans">
+                                            <input id="toPlayer" class="toPlayer" placeholder="Passaporte">
+                                            <input id="amount" class="amount" placeholder="R$">
+                                            <button class="botaotrans "></button>
+                                            <div id="dntz1imgtransanuncio"></div>
+                                        </form>
+
+                                    </div>
+
+                            </div>
+
+                        </div>
+
+                </div>
+
+            </footer>
+
+        </section>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <script src="ui.js"></script>
+
+    <script src="font.js"></script>
+
+    <script>
+        function up(element) {
+            $('.up-box').hide();
+
+            $('#' + element.dataset.display).fadeIn();
+
+        }
+    </script>
+
+</body>
+
+
+
+</html>

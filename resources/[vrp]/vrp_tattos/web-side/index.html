@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>#tattos</title>
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/augmented-ui@2/augmented-ui.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body style="display: none;">
+        <aside>
+            <div class="background"></div>
+
+            <header>
+                <!-- <img id="logo" src="https://static.wikia.nocookie.net/gtawiki/images/8/8c/InkInc-GTAV-Logo.png/revision/latest?cb=20150223162634" -->
+                <label>Categorias</label>
+                <div class="category">
+                    <div class="item" category-name="head">
+                        <img src="./images/head.png">
+                    </div>
+                    <div class="item" category-name="torso">
+                        <img src="./images/chest.png">
+                    </div>
+                    <div class="item" category-name="leftarm">
+                        <img src="./images/arm-left.png">
+                    </div>
+                    <div class="item" category-name="rightarm">
+                        <img src="./images/arm-right.png">
+                    </div>
+                    <div class="item" category-name="leftleg">
+                        <img src="./images/leg-left.png">
+                    </div>
+                    <div class="item" category-name="rightleg">
+                        <img src="./images/leg-right.png">
+                    </div>
+                </div>
+            </header>
+
+            <section id="items">
+                
+            </section>
+
+            <footer>
+                <div class="background"></div>
+                <div class="footer-info">
+                    <span>Rotacionar a esquerda <br><b>[A]</b></span>
+                    <span>Rotacionar a direita <br><b>[D]</b></span>
+                    <span>Levantar as mãos <br><b>[X]</b></span>
+                    <span>Salvar e sair <br><b>[esc]</b></span>
+                </div>
+                <button id="reset">limpar tatuagens</button>
+            </footer>
+        </aside> 
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="./script.js"></script>
+    <script src="./font.js"></script>
+</html>

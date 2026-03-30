@@ -1,0 +1,326 @@
+@font-face {
+    font-family: 'typograph';
+    src: url('typograph.ttf');
+}
+
+body {
+    user-select: none;
+    font-family: 'typograph';
+}
+
+/* 
+    ARENA
+*/
+.actionmenu {
+    display: none;
+}
+.conteudo img {
+    max-width: 60%;
+    max-height: 60%;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+.conteudo {
+    position: absolute;
+    width: 563px;
+    height: 600px;
+    top: 50%;
+    left: 56%;
+    border-radius: 5px;
+    transform: translate(-50%,-50%);
+}
+
+.menu {
+    position: absolute;
+    width: 545px;
+    height: 40px;
+    top: 10px;
+    left: 17px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu p {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.itens {
+    position: absolute;
+    width: 560px;
+    height: 530px;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 5px;
+}
+
+.sessaoItens {
+    width: 100%;
+    height: 100%;
+}
+
+.sessaoItens .conteudoItens {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+  
+    overflow: auto;
+}
+
+.sessaoItens .conteudoItens .itemSessao {
+    width: 550px;
+    height: 160px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    -webkit-transition: background-color 0.2s linear;
+    -ms-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+}
+
+.item-info {
+    position: relative;
+    width: 80%;
+    height: 140px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.fotoItem {
+    width: 140px;
+    height: 140px;
+
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fotoItem span {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(5, 5, 5, 0.35);
+    height: 30px;
+    width: 125px;
+    padding: 8px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.botao {
+    position: absolute;
+    width: 390px;
+    height: 30px;
+    top: 110px;
+    left: 150px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.descricao {
+    position: absolute;
+    width: 388px;
+    height: 101px;
+    top: 1px;
+    left: 150px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.descricao span {
+    font-size: 11px;
+    color: #fff;
+    display: block;
+    margin-top: 15px;
+}
+
+.descricao b {
+    font-size: 12px;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+
+    cursor:pointer;
+
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    background: none;
+}
+
+p {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 8px;
+    font-size: small;
+
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.botao button {
+    margin-top: 10px;
+}
+
+button:hover {
+    border: 1px solid rgba(255, 255, 255, 0.4)
+}
+
+.button-close {
+    position: absolute;
+    width: 30px;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 15px;
+    top: 2px;
+    right: 2px;
+}
+
+.button-close button:hover {
+    color: rgb(255, 0, 0);
+}
+
+
+/* 
+    CONTADOR
+*/
+.contador {
+    display: none;
+    background-color: rgba(0,0,0,0.6);
+    width: 210px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    border-right: 2px solid black;
+    border-radius: 5px;
+}
+
+/* 
+    CHAT KILL
+*/
+.chatkill {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    flex-direction: column;
+}
+
+.killNotify {
+    background-color: rgba(0,0,0,0.5);
+    width: 330px;
+    border-radius: 5px;
+    display: flex;
+    color: #fff;
+    border-right: 2px solid black;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.killNotify .arma {
+    margin-left: 10px;
+    width: 50px;
+}
+
+
+
+.assasino {
+    margin-left: 5px;
+    margin-top: 15px;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vitima {
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 
+    SCOREBOARD
+*/
+.scoreboard {
+    display: none;
+    width: 850px;
+    height: 400px;
+    background-color: rgba(0,0,0,0.5);
+    margin: auto;
+    margin-top: 10em;
+    border-radius: 10px;
+}
+
+.scoreboard_title {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: 85px;
+    text-align: center;
+    margin: auto;
+    bottom: 100px;
+    border-radius: 50px;
+}
+  
+.scoreboard_title span{
+    position: relative;
+    width: 74%;
+    top: 25%;
+    color: #fff;
+    display: inline-block;
+}
+
+.scoreboard_list {
+    position: relative;
+    bottom: 60px;
+    left: 25px;
+    width: 800px;
+    height: 360px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: minmax(90px, 75px);
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.scoreboard_list .ListMembers {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+width: 3px;
+height: 5px;
+}
+
+::-webkit-scrollbar-track {
+background-color: transparent ;
+}
+
+::-webkit-scrollbar-thumb {
+background: rgb(156, 156, 156); 
+border-radius: 5px;
+}

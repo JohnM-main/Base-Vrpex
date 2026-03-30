@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+* {
+    outline: none;
+    list-style: none;
+    user-select: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+aside {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    height: 80%;
+    width: 520px;
+    transform: translate(0,-50%); 
+}
+
+.colors {
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    height: 60%;
+    right: -90px;
+    background-color: rgba(0,0,0,0.4) !important;
+    transform: translate(0,-50%);
+}
+
+.colors header {
+    width: 100%;
+    padding: 0;
+    height: 30px;
+    display: flex;
+    color: #bbb;
+    font-size: 12px;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: #272C30;
+}
+
+.colors .color-content {
+    width: 100%;
+    padding: 0 5px;
+    overflow: auto;
+    margin-top: 3px;
+    max-height: 90%;
+}
+
+.colors .color-content .item {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    transition: all .2s;
+    justify-content: center;
+    background-color: #272C30;
+}
+
+.colors .color-content .item img {
+    max-width: 60%;
+}
+
+.colors .color-content .item:hover {
+    background-color: #c15959;
+}
+
+.colors .color-content .selected {
+    background-color: #ff1b1b;
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4) !important;
+    border-radius: 10px;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header #logo {
+    max-width: 30%;
+    margin-bottom: 20px;
+}
+
+header label {
+    position: relative;
+    top: -10px;
+    opacity: .6;
+    color: #fff;
+    font-size: 8px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header .category {
+    position: relative;
+    top: -10px;
+    width: 70%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.arrowS {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    color: #fff;
+    font-size: 8px;
+    align-items: center;
+    border-radius: 100%;
+    transition: all .2s;
+    justify-content: center;
+    background-color: #ff1b1b;
+    transform: translate(0,-50%);
+}
+.arrowS:hover {
+    background-color: #ff6666;
+    box-shadow: 0 0 0.1rem transparent, inset 0 0 0.1rem transparent, 0 0 .7rem #ff1b1b, inset 0 0 .7rem #ff1b1b
+}
+.ativada {
+    background-color: #ff6666 !important;
+    box-shadow: 0 0 0.1rem transparent, inset 0 0 0.1rem transparent, 0 0 .7rem #ff1b1b, inset 0 0 .7rem #ff1b1b
+}
+
+.prev {
+    left: -40px;
+}
+
+.next {
+    right: -40px;
+    padding-left: 2px;
+}
+
+header .category .item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    transition: all .2s;
+    align-items: center;
+    justify-content: center;
+    background-color: #272C30; 
+}
+
+header .category .item:hover {
+    background-color: #ff1b1b;
+    box-shadow: 0 0 0.1rem transparent, inset 0 0 0.1rem transparent, 0 0 .7rem #ff1b1b, inset 0 0 .7rem #ff1b1b
+}
+
+header .category .item img {
+    max-width: 50%;
+}
+
+header .search {
+    position: relative;
+    top: 7px;
+    width: 100%;
+    display: flex;
+    z-index: 101;
+    align-items: center;
+    justify-content: center;
+}
+
+header .search input {
+    border: 0;
+    width: 60%;
+    color: #bbb;
+    outline: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    background-color: #272C30;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+header .search input::placeholder {
+    font-size: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+section {
+    position: relative;
+    left: 12px;
+    width: 96.9%;
+    height: 600px;
+    overflow: auto;
+    padding: 0 0px;
+    /*height: 600px;*/
+    margin-top: 0px;
+}
+
+section .item {
+    position: relative;
+    width: 115px;
+    height: 115px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+    display: inline-flex;
+    background-color: #272C30;
+}
+
+section .item:hover {
+    background-color: #ff1b1b;
+}
+
+section .item span {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    color: #fff;
+    font-size: 7px;
+    padding: 5px 10px;
+    background-color: #272C30;
+    text-transform: uppercase;
+}
+
+.selected {
+    background-color: #ff1b1b !important;
+}
+
+section .item:last-child {
+    margin: 0;
+}
+
+section .item .item-photo {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://media.discordapp.net/attachments/646512396285902851/859145319568637952/unknown.png');
+    background-size: cover;
+    background-color: #1F2326;
+    border: 3px solid #1F2326;
+}
+
+section .item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 60%;
+    filter:invert(100%);
+    transform: translate(-50%,-50%);
+}
+
+section .item .price {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    color: #fff;
+    font-size: 7px;
+    padding: 3px 10px;
+    padding-right: 7px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: #ff1b1b;
+    box-shadow: 0 0 0.1rem transparent, inset 0 0 0.1rem transparent, 0 0 .7rem #ff1b1b, inset 0 0 .7rem #ff1b1b
+}
+
+footer {
+    position: absolute;
+    left: 50%;
+    width: 95%;
+    bottom: 12px;
+    height: 100px;
+    display: flex;
+    font-size: 8px;
+    text-align: center;
+    letter-spacing: 1px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    transform: translate(-50%,0);
+}
+
+footer .footer-info {
+    position: relative;
+    top: -15px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer .footer-info span {
+    position: relative;
+    left: -15px;
+}
+
+footer .footer-info span:first-child {
+    left: 10px;
+    margin-right: 20px;
+}
+
+b {
+    color: #ff0000;
+}
+
+footer .color-clothe {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 10px;
+    margin-left: 10px;
+    align-items: center;
+    background-color: #1F2326;
+    justify-content: space-between;
+}
+
+footer button {
+    border: 0;
+    width: 100%;
+    color: #fff;
+    outline: none;
+    padding: 10px 10px;
+    font-size: 10px;
+    transition: .5s;
+    margin-top: 25px;
+    border-radius: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #ff1b1b;
+}
+
+footer .actions {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+}
+
+.cam-shop {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    z-index: 101;
+    display: flex;
+    flex-direction: column;
+    transform: translate(0%,-50%);
+}
+
+.cam-shop .item-cam {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-bottom: 10px;
+    transition: all .2s;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #272C30;
+}
+.cam-shop .item-cam:last-child{
+    margin: 0;
+}
+.cam-shop .item-cam:hover{
+    background-color: #ff1b1b;
+    box-shadow: 0 0 0.1rem transparent, inset 0 0 0.1rem transparent, 0 0 .7rem #ff1b1b, inset 0 0 .7rem #ff1b1b
+}
+.cam-shop .item-cam:active {
+    transform: scale(1.1);
+}
+.cam-shop .item-cam img {
+    max-width: 40%;
+}
+
+footer button:hover {
+    background-color: #ff6666;
+}
+
+footer .background {
+    background-color: #272C30 !important;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    background-color: #272C30;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #272C30;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff1b1b; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff6666; 
+}
+
+@media only screen and (max-width: 1366px) { /* 1366x768 */
+    aside {
+        height: 90%;
+        width: 380px;
+    }
+    section {
+        height: 400px;
+    }
+}

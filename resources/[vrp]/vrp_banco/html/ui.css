@@ -1,0 +1,1101 @@
+body {
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+ * {
+     user-select: none;
+     text-decoration: none;
+     font-family: Arial, Helvetica, sans-serif;
+     box-sizing: border-box;
+     transition: all .1s;
+}
+ p {
+     margin: 0;
+     font-family: Arial, Helvetica, sans-serif;
+     padding: 0;
+}
+ .container {
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     width: 950px;
+     height: 600px;
+     border-radius: .5rem;
+     border: 10px solid#2b2a2b;
+     font-family: Arial, Helvetica, sans-serif;
+     background-color:#2b2a2b;
+     transform: translate(-50%,-50%);
+}
+ .container #left {
+     box-shadow: 10px 10px 25px -12px rgba(0,0,0,0.32);
+     font-family: Arial, Helvetica, sans-serif;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100px;
+     height: 100%;
+     display: flex;
+     font-size: 20px;
+     color: #D4D4D4;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+     background-color:#c1c1c1;
+     font-family: Arial, Helvetica, sans-serif;
+     border-radius: .5rem;
+}
+ .container #left .icones {
+     position: absolute;
+     font-family: Arial, Helvetica, sans-serif;
+     top: 17%;
+}
+ .container #left .logo {
+     height: 100px;
+     width: 101px;
+     position: absolute;
+     margin-left: 1%;
+     margin-bottom: 1%;
+     top: 0%;
+     background-image: url('link da sua logo aqui');
+     background-color: #f9b036;
+     background-size: 100% 100%;
+     font-family: Arial, Helvetica, sans-serif;
+     border-radius: 10px 10px 0px 0px;
+}
+ .container #left .icon {
+     transform: scale(5);
+     margin-top: 60px;
+     font-family: Arial, Helvetica, sans-serif;
+     max-height: 20px;
+}
+ .container #left .icon:hover {
+     background-color: white;
+     font-family: Arial, Helvetica, sans-serif;
+}
+ .container #center {
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 85%;
+     height: 100%;
+     padding-right: 30px;
+}
+/* .container #center .dash {
+     display: none;
+     left: 22.3%;
+     position: absolute;
+     width: 220px;
+     height: 580px;
+     font-size: 12px;
+     bottom: 1px;
+     padding: 7px 15px;
+     text-align: center;
+     border-radius: 10px;
+     background-color: #ff2f2f;
+     border: 1px solid rgba(170, 170, 170, 0.301);
+}
+ */
+/* .container #center .dashboard {
+     right: 29%;
+     position: absolute;
+     width: 590px;
+     height: 580px;
+     font-size: 12px;
+     bottom: 1px;
+     padding: 7px 15px;
+     text-align: center;
+     border-radius: 10px;
+     background-color:#181818;
+     border: 1px solid rgba(170, 170, 170, 0.301);
+}
+ */
+ .container #right {
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 85%;
+     height: 100%;
+     padding-right: 30px;
+     color: #ffffff;
+}
+ .container #right header {
+}
+ .container #right header .title {
+     position: relative;
+     padding: 20px 30px;
+     font-size: 12px;
+     color: #ff0000;
+     display: inline-flex;
+     white-space: nowrap;
+}
+ .container #right header .title #data {
+     position: absolute;
+     top: 20px;
+     right: 30px;
+     opacity: .3;
+     text-transform: uppercase;
+}
+ .container #right header .title span {
+     color: #646568;
+}
+ .container #right header .right-box {
+     box-shadow: -7px 0px 25px -12px rgba(0,0,0,0.44);
+     left: 72.3%;
+     position: absolute;
+     width: 220px;
+     height: 580px;
+     font-size: 12px;
+     bottom: 1px;
+     padding: 7px 15px;
+     text-align: center;
+     border-radius: 10px;
+     background-color: #f9b036;
+     border: 1px solid rgba(255, 255, 255, 0.301);
+}
+ .container #right header .account .right-pic {
+     background-image: url('https://cdn.discordapp.com/attachments/760261025260896316/772534381624819752/Male.svg');
+     background-position: -18px -8px;
+     background-size: 125% 119%;
+     left: 16%;
+     top: 4.3%;
+     position: absolute;
+     font-size: 13px;
+     width: 150px;
+     transform: scale(1.0);
+     height: 150px;
+     background-color: #ffffff;
+     border-radius: 10px;
+     border: 4px solid #fd772b;
+}
+ .container #right header .account .right-pic:hover {
+     transform: scale(1.08);
+}
+/* Divisao 100 deposito */
+ .container #right footer .quick-actionsd {
+     transform: scale(1.0);
+     position: absolute;
+     width: 100px;
+     height: 100px;
+     font-size: 12px;
+     margin-top: 220px;
+     background-image: url('https://cdn.discordapp.com/attachments/759892139663687771/773041735709753384/D1.png');
+     background-size: 100% 100%;
+     padding: 7px 15px;
+     text-align: center;
+     border-radius: 10px;
+     background-color: #f9b036;
+     transition: .5s;
+     border: 1px solid rgba(170, 170, 170, 0.301);
+}
+ .container #right footer .quick-actionsd div {
+     color: #aaa;
+     margin-bottom: 7px;
+}
+ .container #right footer .quick-actionsd:hover {
+     padding: 5px;
+     cursor: pointer;
+     transform: scale(1.05);
+}
+ .container #right footer .quick-actionsd div:last-child {
+     margin: 0;
+}
+/* Divisao 1.000 deposito */
+ .container #right footer .quick-actions1d {
+     transform: scale(1.0);
+     position: absolute;
+     width: 100px;
+     height: 100px;
+     font-size: 12px;
+     margin-top: 220px;
+     margin-left: 25%;
+     background-image: url('https://cdn.discordapp.com/attachments/759892139663687771/773038855787380796/D2.png');
+     background-size: 100% 100%;
+     padding: 7px 15px;
+     text-align: center;
+     border-radius: 10px;
+     background-color: #f9b036;
+     transition: .5s;
+     border: 1px solid rgba(170, 170, 170, 0.301);
+}
+ .container #right footer .quick-actions1d div {
+     color: #aaa;
+     margin-bottom: 7px;
+}
+ .container #right footer .quick-actions1d:hover {
+     padding: 5px;
+     cursor: pointer;
+     transform: scale(1.05);
+}
+ .container #right footer .quick-actions1d div:last-child {
+     margin: 0;
+}
+/* Divisao 10.000 deposito */
+ .container #right footer .quick-actions2d {
+     transform: scale(1.0);
+     position: absolute;
+     width: 100px;
+     height: 100px;
+     font-size: 12px;
+     margin-top: 220px;
+     margin-left: 50%;
+     background-image: url('https://cdn.discordapp.com/attachments/759892139663687771/773047106717483018/D3.png');
+     background-size: 100% 100%;
+     padding: 7px 15px;
+     text-align: center;
+     border-radius: 10px;
+     background-color: #f9b036;
+     transition: .5s;
+     border: 1px solid rgba(170, 170, 170, 0.301);
+}
+ .container #right footer .quick-actions2d div {
+     color: #aaa;
+     margin-bottom: 7px;
+}
+ .container #right footer .quick-actions2d:hover {
+     padding: 5px;
+     cursor: pointer;
+     transform: scale(1.05);
+}
+ .container #right footer .quick-actions2d div:last-child {
+     margin: 0;
+}
+/* Divisao 100.000 deposito */
+ .container #right footer .quick-actions3d {
+     transform: scale(1.0);
+     position: absolute;
+     width: 100px;
+     height: 100px;
+     font-size: 12px;
+     margin-top: 220px;
+     margin-left: 75%;
+     background-image: url('https://cdn.discordapp.com/attachments/759892139663687771/773047430735724544/D4.png');
+     background-size: 100% 100%;
+     padding: 7px 15px;
+     text-align: center;
+     border-radius: 10px;
+     background-color: #f9b036;
+     transition: .5s;
+     border: 1px solid rgba(170, 170, 170, 0.301);
+}
+ .container #right footer .quick-actions3d div {
+     color: #aaa;
+     margin-bottom: 7px;
+}
+ .container #right footer .quick-actions3d:hover {
+     padding: 5px;
+     cursor: pointer;
+     transform: scale(1.05);
+}
+ .container #right footer .quick-actions3d div:last-child {
+     margin: 0;
+}
+ #dntz1imgdepositaranuncio {
+     position: absolute;
+     width: 500px;
+     height: 150px;
+     margin-top: 65%;
+     font-size: 17px;
+     color: #ffffff;
+     background-image:url('https://cdn.discordapp.com/attachments/759892139663687771/773048416652886046/AnuncioDeposito.svg');
+     background-size: 100% 100%;
+     line-height: 15px;
+     border-radius: 10px;
+}
+ #dntz1imgmultasanuncio {
+     position: absolute;
+     width: 500px;
+     height: 150px;
+     margin-top: 25%;
+     font-size: 17px;
+     color: #ffffff;
+     background-image:url('https://cdn.discordapp.com/attachments/718623297385791541/781289019111243776/AnuncioDeposito-01.svg');
+     background-size: 100% 100%;
+     line-height: 15px;
+     border-radius: 10px;
+}
+/* Deposito Finalizado */
+/* Divisão sacar 100 */
+ .container #right footer .quick-actionss {
+     transform: scale(1.0);
+     position: absolute;
+     width: 100px;
+     height: 100px;
+     font-size: 12px;
+     margin-top: 220px;
+     background-image: url('https://cdn.discordapp.com/attachments/759892139663687771/773200260104978512/S1.png');
+     background-size: 100% 100%;
+     padding: 7px 15px;
+     text-align: center;
+     border-radius: 10px;
+     background-color: #f9b036;
+     transition: .5s;
+     border: 1px solid rgba(170, 170, 170, 0.301);
+}
+ .container #right footer .quick-actionss div {
+     color: #aaa;
+     margin-bottom: 7px;
+}
+ .container #right footer .quick-actionss:hover {
+     padding: 5px;
+     cursor: pointer;
+     transform: scale(1.05);
+}
+ .container #right footer .quick-actionss div:last-child {
+     margin: 0;
+}
+/* Divisão sacar 500 */
+ .container #right footer .quick-actionss1 {
+     transform: scale(1.0);
+     position: absolute;
+     width: 100px;
+     height: 100px;
+     font-size: 12px;
+     margin-top: 220px;
+     margin-left: 25%;
+     background-image: url('https://cdn.discordapp.com/attachments/759892139663687771/773200379181531156/S2.png');
+     background-size: 100% 100%;
+     padding: 7px 15px;
+     text-align: center;
+     border-radius: 10px;
+     background-color: #f9b036;
+     transition: .5s;
+     border: 1px solid rgba(170, 170, 170, 0.301);
+}
+ .container #right footer .quick-actionss1 div {
+     color: #aaa;
+     margin-bottom: 7px;
+}
+ .container #right footer .quick-actionss1:hover {
+     padding: 5px;
+     cursor: pointer;
+     transform: scale(1.05);
+}
+ .container #right footer .quick-actionss1 div:last-child {
+     margin: 0;
+}
+/* Divisão sacar 1.000 */
+ .container #right footer .quick-actionss2 {
+     transform: scale(1.0);
+     position: absolute;
+     width: 100px;
+     height: 100px;
+     font-size: 12px;
+     margin-top: 220px;
+     margin-left: 50%;
+     background-image: url('https://cdn.discordapp.com/attachments/759892139663687771/773200391797735434/S3.png');
+     background-size: 100% 100%;
+     padding: 7px 15px;
+     text-align: center;
+     border-radius: 10px;
+     background-color: #f9b036;
+     transition: .5s;
+     border: 1px solid rgba(170, 170, 170, 0.301);
+}
+ .container #right footer .quick-actionss2 div {
+     color: #aaa;
+     margin-bottom: 7px;
+}
+ .container #right footer .quick-actionss2:hover {
+     padding: 5px;
+     cursor: pointer;
+     transform: scale(1.05);
+}
+ .container #right footer .quick-actionss2 div:last-child {
+     margin: 0;
+}
+/* Divisão sacar 5.000 */
+ .container #right footer .quick-actionss3 {
+     transform: scale(1.0);
+     position: absolute;
+     width: 100px;
+     height: 100px;
+     font-size: 12px;
+     margin-top: 220px;
+     margin-left: 75%;
+     background-image: url('https://cdn.discordapp.com/attachments/759892139663687771/773234331014529055/S4.png');
+     background-size: 100% 100%;
+     padding: 7px 15px;
+     text-align: center;
+     border-radius: 10px;
+     background-color: #f9b036;
+     transition: .5s;
+     border: 1px solid rgba(170, 170, 170, 0.301);
+}
+ .container #right footer .quick-actionss3 div {
+     color: #aaa;
+     margin-bottom: 7px;
+}
+ .container #right footer .quick-actionss3:hover {
+     padding: 5px;
+     cursor: pointer;
+     transform: scale(1.05);
+}
+ .container #right footer .quick-actionss3 div:last-child {
+     margin: 0;
+}
+ .container #right .title #line {
+     width: 1px;
+     height: 10px;
+     margin: 3px 10px;
+     background-color: #aaa;
+}
+ .container #right header .account {
+     width: 100%;
+     padding: 10px 30px;
+}
+ .container #right header .account .card-box {
+     display: inline-flex;
+}
+ .container #right header .account .card {
+     font-family: Arial, Helvetica, sans-serif;
+     position: relative;
+     width: 188px;
+     height: 70px;
+     color: rgb(68, 68, 68);
+     margin-top: 260px;
+     padding: 10px 25px;
+     margin-right: 10px;
+     border-radius: .3rem;
+     background-image: url('https://cdn.discordapp.com/attachments/760261025260896316/773012623696461834/dntz1_card-wallet.png');
+     background-size: 188px 70px;
+}
+ #dntz1imgsacaranuncio {
+     position: absolute;
+     width: 500px;
+     height: 150px;
+     margin-top: 65%;
+     font-size: 17px;
+     color: #ffffff;
+     background-image:url('https://cdn.discordapp.com/attachments/759892139663687771/773201544912961576/AnuncioSacar.svg');
+     background-size: 100% 100%;
+     line-height: 15px;
+     border-radius: 10px;
+}
+
+#dntz1imginitanuncio {
+     position: absolute;
+     width: 500px;
+     height: 150px;
+     margin-top: 33%;
+     font-size: 17px;
+     color: #ffffff;
+     background-image:url('https://cdn.discordapp.com/attachments/759892139663687771/773201544912961576/AnuncioSacar.svg');
+     background-size: 100% 100%;
+     line-height: 15px;
+     border-radius: 10px;
+}
+
+
+/* Transação */
+ #dntz1imgtrans {
+     position: absolute;
+     width: 500px;
+     height: 150px;
+     font-size: 17px;
+     color: #ffffff;
+     background-image:url('https://cdn.discordapp.com/attachments/759892139663687771/773202712242028564/TransImage.svg');
+     background-size: 100% 100%;
+     line-height: 15px;
+     border-radius: 10px;
+}
+ #dntz1imgtransanuncio {
+     position: absolute;
+     width: 500px;
+     height: 150px;
+     margin-top: 20%;
+     margin-left: -100%;
+     font-size: 17px;
+     color: #ffffff;
+     background-image:url('https://cdn.discordapp.com/attachments/759892139663687771/773208247552966666/AnuncioTrans.svg');
+     background-size: 100% 100%;
+     line-height: 15px;
+     border-radius: 10px;
+}
+ .container #right header .account .card:nth-child(2) {
+     color: #37383C 
+}
+ .container #right header .account .card img {
+     position: absolute;
+     left: 11%;
+     top: 10%;
+     max-height: 45px;
+}
+ .container #right header .account .card span {
+     position: absolute;
+     left: 45%;
+     top: 49%;
+     font-size: 16px;
+}
+ .container #right header .account .card #info {
+     position: absolute;
+     right: 57%;
+     bottom: 23%;
+     font-size: 17px;
+}
+ .container #right header .account .card2 {
+     font-family: Arial, Helvetica, sans-serif;
+     position: relative;
+     width: 188px;
+     height: 70px;
+     color: rgb(68, 68, 68);
+     font-weight: 200;
+     margin-top: 10px;
+     padding: 10px 25px;
+     margin-right: 10px;
+     border-radius: .3rem;
+     background-image: url('https://cdn.discordapp.com/attachments/760261025260896316/773013311565856808/dntz1_card-bank.png');
+     background-size: 188px 70px;
+}
+ .container #right header .account .card2:nth-child(2) {
+     color: #37383C 
+}
+ .container #right header .account .card2 img {
+     position: absolute;
+     left: 11%;
+     top: 10%;
+     max-height: 45px;
+}
+ .container #right header .account .card2 span {
+     position: absolute;
+     left: 45%;
+     top: 49%;
+     font-size: 16px;
+}
+ .container #right header .account .card2 #info {
+     position: absolute;
+     right: 57%;
+     bottom: 23%;
+     font-size: 17px;
+}
+ .container #right header .account .line {
+     width: 180px;
+     height: 1px;
+     margin: 0px 4px;
+     margin-top: 3%;
+     border-radius: .3rem;
+     background-color: #ebebeb;
+}
+ .container #right header .account .title-balance {
+     position: relative;
+     font-size: 13px;
+     margin-bottom: 100px;
+}
+ .container #right header .account .title-balance span {
+     position: absolute;
+     top: 1px;
+     opacity: .4;
+     right: -5px;
+     font-size: 10px;
+}
+ .container #right header .account .item-box h1 {
+     color: #ff0000;
+}
+ .container #right header .account .item-box .identidade {
+     width: 240px;
+     height: 230px;
+     font-size: 22px;
+     padding: 7px 15px;
+     border-radius: 10px;
+     background-color: transparent;
+     position: absolute;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     bottom: 30%;
+     right: 1px;
+     left: -11px;
+     text-align: center;
+}
+ .container #right header .account .item-box .emprego {
+     width: 140px;
+     height: 30px;
+     padding: 7px 15px;
+     border-radius: 10px;
+     background-color: #1d1d1b;
+     position: absolute;
+     white-space: nowrap;
+     overflow: hidden;
+     color: #cea00a;
+     border: 2px solid #fd772b;
+     text-overflow: ellipsis;
+     bottom: 57%;
+     left: 17.25%;
+     text-align: center;
+}
+ .container #right header .account .item-box small {
+     font-size: 10px;
+}
+ .container #right footer {
+     width: 100%;
+     height: 260px;
+     display: flex;
+     font-size: 13px;
+     margin-top: 10px;
+     padding: 30px 30px;
+}
+ .container #right footer .sacardh {
+     height: 100px;
+     width: 101px;
+     position: absolute;
+     margin-left: 1%;
+     margin-bottom: 1%;
+     top: 30%;
+     transform: scale(1.0);
+     transition: .5s;
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     background-image: url('https://cdn.discordapp.com/attachments/759892139663687771/773025633219510272/SacarWhiteIcon.png');
+     background-color: #f9b036;
+     border-radius: 10px 10px 10px 10px;
+}
+ .container #right footer .sacardh:hover {
+     background-color: black;
+     transform: scale(1.15);
+     cursor:pointer;
+}
+ .container #right footer .depositodh {
+     height: 100px;
+     width: 101px;
+     position: absolute;
+     margin-left: 1%;
+     margin-bottom: 1%;
+     top: 30%;
+     left: 20%;
+     transition: .5s;
+     transform: scale(1.0);
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     background-image: url('https://cdn.discordapp.com/attachments/759892139663687771/773025632007094322/DepositoWhiteIcon.png');
+     background-color: #f9b036;
+     border-radius: 10px 10px 10px 10px;
+}
+ .container #right footer .depositodh:hover {
+     background-color: black;
+     transform: scale(1.15);
+     cursor:pointer;
+}
+ .desctitle {
+     color: rgb(114, 114, 114);
+     font-size: 16px;
+     position: absolute;
+     top: 9%;
+}
+ .olatitle {
+     font-size: 28px;
+     position: absolute;
+     top: 1%;
+}
+ .dashboardtitle {
+     font-size: 22px;
+}
+ .dashboardtitle2 {
+     font-size: 22px;
+     position: absolute;
+     margin-top: 18%;
+}
+ .container #right footer .multasdh {
+     height: 100px;
+     width: 101px;
+     position: absolute;
+     margin-left: 1%;
+     margin-bottom: 1%;
+     top: 30%;
+     left: 36%;
+     transform: scale(1.0);
+     transition: .5s;
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     background-image: url('https://cdn.discordapp.com/attachments/759892139663687771/773025637182734346/DebitosWhiteIcon.png');
+     background-color:#f9b036;
+     border-radius: 10px 10px 10px 10px;
+}
+ .container #right footer .multasdh:hover {
+     background-color: black;
+     transform: scale(1.15);
+     cursor:pointer;
+}
+ .container #right footer .transdh {
+     height: 100px;
+     width: 101px;
+     position: absolute;
+     margin-left: 1%;
+     margin-bottom: 1%;
+     top: 30%;
+     left: 52%;
+     transform: scale(1.0);
+     transition: .5s;
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     background-image: url('https://cdn.discordapp.com/attachments/759892139663687771/773025634288271380/TransWhiteIcon.png');
+     background-color:#f9b036;
+     border-radius: 10px 10px 10px 10px;
+}
+ .container #right footer .transdh:hover {
+     background-color: black;
+     transform: scale(1.15);
+     cursor:pointer;
+}
+ .container #right footer .extrato {
+     position: relative;
+     width: 500px;
+     height: 60px;
+     padding-bottom: 15px;
+     display: inline-flex;
+     border-bottom: 1px solid #E8E8E8;
+}
+ .container #right footer .line {
+     width: 400px;
+     height: 2px;
+     position: absolute;
+     top: 15%;
+     border-radius: .4rem;
+     background-color: rgba(231, 231, 231, 0.842);
+}
+ .container #right footer .item-info-box {
+     width: 470px;
+     height: 100%;
+     display: flex;
+     padding: 20px 0px;
+     margin-top: 10px;
+     border-radius: .4rem;
+}
+ .container #right footer .item-extract-box {
+     height: 170px;
+     width: 501px;
+     position: absolute;
+     margin-left: 1%;
+     margin-bottom: 1%;
+     top: 60%;
+     left: 3%;
+     transform: scale(1.0);
+     background-repeat: no-repeat;
+     background-size: 80px 80px;
+     background-position-x: 10px;
+     background-position-y: 10px;
+     background-color: #ffffff;
+     border-radius: 10px 10px 10px 10px;
+}
+ .container #right footer .item-extract-box .itens {
+     font-family: "Montserrat-SemiBold";
+     position: absolute;
+     bottom: 0%;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     border-radius: 10px;
+     max-height: 99%;
+     overflow: auto;
+     max-height: 300px;
+     flex-direction: column;
+}
+ .container #right footer .item-extract-box .item {
+     position: relative;
+     width: 200px;
+     height: 60px;
+     margin-top: 20px;
+     padding-bottom: 15px;
+     display: inline-flex;
+     border-bottom: 1px solid #E8E8E8;
+}
+ .container #right footer .item-extract-box .item .item-text {
+     font-size: 10px;
+     margin-top: 5px;
+     line-height: 10px;
+}
+ .container #right footer .item-extract-box .item .item-text-price {
+     position: absolute;
+     right: 0;
+     font-size: 14px;
+     text-align: right;
+     line-height: 10px;
+}
+ .container #right footer .item-extract-box .item .item-text-price span {
+     color: #646568c4;
+     font-size: 8px;
+}
+ .container #right footer .item-extract-box .item .item-text span {
+     color: #646568c4;
+     font-weight: 500;
+     font-size: 9px;
+}
+ .container #right footer .item-extract-box .item .icon {
+     width: 30px;
+     height: 30px;
+     display: flex;
+     font-size: 12px;
+     margin-right: 10px;
+     text-align: center;
+     align-items: center;
+     border-radius: .4rem;
+     justify-content: center;
+     color: #252525;
+     border: 1px dotted #6465684b;
+}
+ .container #right footer .quick {
+     font-size: 20px;
+     position: absolute;
+     margin-top: 185px;
+}
+ .container #right footer .item-info-box .item {
+     top: 20%;
+     position: absolute;
+     width: 500px;
+     height: 150px;
+     font-size: 17px;
+     color: #ffffff;
+     line-height: 15px;
+     border-radius: 10px;
+}
+ #dntz1imgsacar {
+     position: absolute;
+     width: 500px;
+     height: 150px;
+     font-size: 17px;
+     color: #ffffff;
+     background-image:url('https://cdn.discordapp.com/attachments/759892139663687771/773199113541124096/SacarImage.svg');
+     background-size: 100% 100%;
+     line-height: 15px;
+     border-radius: 10px;
+}
+ #dntz1imgmultas {
+     position: absolute;
+     width: 500px;
+     height: 150px;
+     font-size: 17px;
+     color: #ffffff;
+     background-image:url('https://cdn.discordapp.com/attachments/718623297385791541/781289020407021608/DepositoImage-01_1.svg');
+     background-size: 100% 100%;
+     line-height: 15px;
+     border-radius: 10px;
+}
+ #dntz1imgdepositar {
+     position: absolute;
+     width: 500px;
+     height: 150px;
+     font-size: 17px;
+     color: #ffffff;
+     background-image:url('https://cdn.discordapp.com/attachments/759892139663687771/773032536678727680/DepositoImage.svg');
+     background-size: 100% 100%;
+     line-height: 15px;
+     border-radius: 10px;
+}
+ .container #right footer .item-info-box .item .image123 {
+     top: 14%;
+     position: absolute;
+     width: 130px;
+     height: 130px;
+     font-size: 17px;
+     border-radius: 10px;
+}
+ .container #right footer .item-info-box .item-input {
+     position: absolute;
+     padding-left: 64%;
+     margin-top: 55px;
+}
+ .container #right footer .item-info-box .mymultas {
+     top: 100%;
+     left: 0%;
+     margin-top: 25px;
+     position: absolute;
+     font-size: 27px;
+     width: 500px;
+     height: 130px;
+     background-color: rgb(255, 255, 255);
+     color: #000000;
+     line-height: 15px;
+     border-radius: 10px;
+}
+ .container #right footer .item-info-box .iconemultas {
+     bottom: 0%;
+     margin-top: 15px;
+     left: 70.1%;
+     width: 150px;
+     height: 150px;
+     position: absolute;
+     color: #000000;
+     font-size: 17px;
+     transform: scale(1.0);
+     background-color: transparent;
+     background-image: url('https://cdn.discordapp.com/attachments/536772140721111049/712107724493553695/1642096.png');
+     background-repeat: no-repeat;
+     background-size: 150px 150px;
+     background-position-y: 40px;
+     background-position-x: 40px;
+     line-height: 15px;
+     border-radius: 10px;
+}
+ .container #right footer .item-info-box .indicador {
+     margin-top: 26px;
+     left: 3%;
+     position: absolute;
+     color: #000000;
+     font-size: 27px;
+     line-height: 15px;
+     border-radius: 10px;
+}
+ .container #right footer .item-info-box .indicador2 {
+     margin-top: 57px;
+     left: 3%;
+     align-items: flex-end;
+     position: absolute;
+     color: #000000;
+     font-size: 27px;
+     line-height: 15px;
+     border-radius: 10px;
+}
+ .container #right footer .item-info-box .indicador3 {
+     margin-top: 87px;
+     left: 3.2%;
+     position: absolute;
+     color: #000000;
+     font-size: 27px;
+     line-height: 15px;
+     border-radius: 10px;
+}
+ .container #right footer .item-info-box .multasbalance {
+     margin-top: 57px;
+     position: absolute;
+     left: 10.5%;
+     font-size: 24px;
+     color: #ff2323;
+     line-height: 15px;
+     border-radius: 10px;
+}
+ .container #right footer .item-info-box .item .valor {
+     color: #fff;
+     font-size: 26px;
+     position: absolute;
+     left: 41.5%;
+     top: 15%;
+}
+ .container #right footer .item-info-box .item .valor2 {
+     color: #fff;
+     font-size: 26px;
+     position: absolute;
+     left: 48%;
+     top: 15%;
+}
+ .container #right footer .item-info-box .item .valor3 {
+     color: #fff;
+     font-size: 26px;
+     position: absolute;
+     left: 61.5%;
+     top: 15%;
+}
+ .container #right footer .item-info-box .item .valor4 {
+     color: #fff;
+     font-size: 26px;
+     position: absolute;
+     left: 38.5%;
+     top: 15%;
+}
+ .container #right footer .item-info-box .item-input p {
+     opacity: .5;
+     font-size: 10px;
+     text-transform: uppercase;
+}
+ .container #right footer .item-info-box .item-input input {
+     width: 165px;
+     height: 45px;
+     bottom: 5%;
+     position: absolute;
+     font-family: 'Poppins', sans-serif;
+     outline: none;
+     font-size: 18px;
+     color: rgb(255, 0, 0);
+     padding-left: 10px;
+     border-radius: .5rem;
+     background-color: rgb(255, 255, 255);
+     border: 1px solid rgb(243, 243, 243);
+}
+ .container #right footer .item-info-box .item-input .amount {
+     width: 170px;
+     height: 35px;
+     top: 14%;
+     margin-top: 4%;
+     margin-left: -40%;
+     font-family: 'Poppins', sans-serif;
+     outline: none;
+     font-size: 18px;
+     color: rgb(59, 59, 59);
+     padding-left: 10px;
+     border-radius: .2rem;
+     background-color: rgb(255, 255, 255);
+}
+ .container #right footer .item-info-box .item-input .toPlayer {
+     width: 120px;
+     height: 35px;
+     top: 14%;
+     margin-top: 4%;
+     left: 95%;
+     font-family: 'Poppins', sans-serif;
+     outline: none;
+     font-size: 18px;
+     color: rgb(99, 98, 98);
+     margin-left: 63px;
+     padding-left: 10px;
+     border-radius: .2rem;
+     background-color: rgb(255, 255, 255);
+}
+ .container #right footer .item-info-box .item-input button {
+     position: absolute;
+     color: rgb(0, 0, 0);
+     font-weight: bold;
+     margin-left: 18%;
+     margin-top: 4.5% ;
+     opacity: 1;
+     outline: none;
+     font-size: 12px;
+     padding: 5px 10px;
+     text-transform: uppercase;
+     background-color: rgb(255, 255, 255);
+     border-radius: .5rem;
+     font-family: 'Poppins', sans-serif;
+     border: 1px solid rgba(0, 0, 0, 0);
+     transition: .5s;
+}
+ .container #right footer .item-info-box .item-input .botaodepo {
+     margin-left: 18%;
+     margin-top: 4.5% ;
+}
+ .container #right footer .item-info-box .item-input .botaotrans {
+     margin-left:-54%;
+     margin-top: 4%;
+     width: 35px;
+     height: 35px;
+     transition: .5s;
+     background-image: url('https://cdn.discordapp.com/attachments/759892139663687771/773206243165995058/dntz1_transiconteste.png');
+     background-size: 100% 100%;
+     background-color: white;
+}
+ .container #right footer .item-info-box .item-input button:hover {
+     background-color: rgb(49, 49, 49);
+     color: white;
+     cursor: pointer;
+     transform: scale(1.1);
+}
+ .container #right footer .item-info-box .item #line {
+     width: 100%;
+     height: 1px;
+     margin: 10px 0px;
+     background-color: rgba(170, 170, 170, 0.651);
+}
+ .container #right footer .item-info-box .item label {
+     text-transform: uppercase;
+     font-size: 10px;
+     color: #C1C5CD;
+}
+ ::-webkit-scrollbar {
+     width: 0px;
+}
+ ::-webkit-scrollbar-thumb {
+     border-radius: 30px;
+     background: #666666;
+}

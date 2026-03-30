@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/augmented-ui@2/augmented-ui.min.css">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <link rel="stylesheet" href="ui.css">
+</head>
+<body style="display: none;">
+
+    <aside>
+        <div class="background" data-augmented-ui="br-clip"></div>
+
+        <header>
+            <label>Categorias</label>
+            <div class="category owl-carousel">
+                <div class="item" data-type="mask" onclick="selectPart(this)" data-idpart="mascara"><img src="./assets/mask.svg"></div>
+                <div class="item" data-type="arms" onclick="selectPart(this)" data-idpart="mao"><img src="assets/hand.svg"></div>
+                <div class="item" data-type="tshirt" onclick="selectPart(this)" data-idpart="camisa"><img src="assets/shirt.svg"></div>
+                <div class="item" data-type="shield" onclick="selectPart(this)" data-idpart="colete"><img src="assets/armour.png"></div>
+                <div class="item" data-type="torso" onclick="selectPart(this)" data-idpart="jaqueta"><img src="assets/jacket.svg"></div>
+                <div class="item" data-type="pants" onclick="selectPart(this)" data-idpart="calca"><img src="assets/pants.svg"></div>
+                <div class="item" data-type="ear" onclick="selectPart(this)" data-idpart="brinco"><img src="assets/earrings.svg"></div>
+                <div class="item" data-type="hat" onclick="selectPart(this)" data-idpart="bone"><img src="assets/hat.svg"></div>
+                <div class="item" data-type="glass" onclick="selectPart(this)" data-idpart="oculos"><img src="assets/sunglasses.svg"></div>
+                <div class="item" data-type="bracelet" onclick="selectPart(this)" data-idpart="bracelete"><img src="assets/bracelet.svg"></div>
+                <div class="item" data-type="shoes" onclick="selectPart(this)" data-idpart="sapato"><img src="assets/sneakers.svg"></div>
+                <div class="item" data-type="accessory" onclick="selectPart(this)" data-idpart="gravata"><img src="assets/necklace.svg"></div>
+                <div class="item" data-type="mochila" onclick="selectPart(this)" data-idpart="mochila"><img src="assets/bag.svg"></div>
+                <div class="item" data-type="watch" onclick="selectPart(this)" data-idpart="relogio"><img src="assets/watch.svg"></div>
+            </div>
+            <div class="search">
+                <input placeholder="pesquisar" id="search" type="number" data-augmented-ui="br-clip">
+            </div>
+        </header>
+
+        <section id="listagem"></section>
+
+        <div class="colors" data-augmented-ui="br-clip">
+            <header>cores</header>
+            <div class="color-content" id="listaCores"></div>
+        </div>
+
+        <footer>
+            <div class="background" data-augmented-ui="br-clip"></div>
+            <div class="footer-info">
+                <span>Rotacionar a esquerda <br><b>[A]</b></span>
+                <span>Rotacionar a direita <br><b>[D]</b></span>
+                <span>Levantar as mãos <br><b>[X]</b></span>
+                <span>Salvar e sair <br><b>[esc]</b></span>
+            </div>
+            <div class="actions">                    
+                <button class="save" id="cart" data-augmented-ui="br-clip">Salvar Roupas</button>
+            </div>
+        </footer>
+    </aside>   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="owl.carousel.min.js"></script>
+    <script src="font.js"></script>
+    <script src="ui.js"></script>
+    <script>
+        $(".owl-carousel").owlCarousel({
+            nav: true,
+            margin: -130,
+            navText: ["<div class='arrowS prev'><i class='fas fa-chevron-left'></i></div>","<div class='arrowS next'><i class='fas fa-chevron-right'></i></div>"]
+        });
+    </script>
+</body>
+</html>

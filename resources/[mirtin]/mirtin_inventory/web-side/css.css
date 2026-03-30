@@ -1,0 +1,217 @@
+::-webkit-scrollbar { display: none; }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+body {
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+* {
+	overflow: hidden;
+	box-sizing: border-box;
+	user-select: none;
+}
+
+.inventory {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	height: 100vh;
+	width: 100vw;
+
+	background: rgba(0,0,0,0.7);
+}
+
+.innerInventory {
+	display: flex;
+	flex-direction: column;
+}
+
+.sections {
+	height: 490px;
+	display: flex;
+}
+
+.invLeft, .invRight {
+	overflow-y: scroll;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	column-gap: 3px;
+	row-gap: 3px;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+
+	width: 116px;
+	height: 120px;
+	border: 1px solid rgba(255, 255, 255, 0.239);
+
+	background: rgba(0, 0, 0, 0.412);
+	
+}
+
+.populated {
+	background-size: 60%!important;
+	background-position: center!important;
+	background-repeat: no-repeat!important;
+}
+
+.populated:hover, .hoverControl {
+	background-color: rgba(0, 0, 0, 0.528) !important;
+}
+
+.item .top {
+	display: flex;
+	justify-content: space-between;
+	font-size: .65rem;
+	color: rgb(250, 250, 250);
+	margin: 10px 12px;
+}
+
+.item .itemname {
+	margin-top: auto;
+	align-self: center;
+
+	width: 100%;
+	padding: 7px 10px 4px;
+
+	letter-spacing: 1px;
+	font-size: .70rem;
+	text-align: center;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+
+	text-shadow: 1px 1px #000;
+	background: rgba(0, 0, 0, 0.281);
+}
+
+.durability {
+	height: 3px;
+	background: #1a8547;
+}
+
+.durabilityInner {
+	background: #2eb969;
+}
+
+.close:hover {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+#nonebility {
+	height: 3px;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.invMiddle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.invMiddle div {
+	font-size: .75rem;
+	text-align: center;
+
+	border: 1px solid rgba(255, 255, 255, 0.239);
+	background: rgba(0, 0, 0, 0.281);
+	letter-spacing: 1px;
+
+	width: 70%;
+	margin-top: 12px;
+	padding: 16px 4px;
+}
+
+.invMiddle input {
+	font-size: .75rem;
+	letter-spacing: 1px;
+	border: 1px solid rgb(107, 107, 107);
+	background: rgba(0, 0, 0, 0.281);
+	padding: 16px 4px;
+}
+
+.invMiddle input, .invMiddle input::placeholder {
+	text-align: center;
+	appearance: none;
+	outline: none;
+	border-radius: 0;
+	width: 70%;
+	color: #FFF;
+}
+
+.myInfos {
+	align-self: flex-start;
+	padding: 0 0 25px 16px;
+}
+
+.myInfos2 {
+	position: relative;
+	left: 55.8%;
+	top: 12.4%;
+}
+
+.infosContent {
+	padding-top: 12px;
+	font-size: .70rem;
+	color: rgb(255, 255, 255);
+}
+
+.infosContent span {
+	letter-spacing: 1px;
+	margin-right: 16px;
+}
+
+.myInfos b {
+	color: rgb(255, 255, 255);
+	font-size: 1.5rem;
+	padding-bottom: 15px;
+}
+
+.myInfos i {
+	color: rgba(255, 255, 255, 0.582);
+	font-weight: 300;
+}
+
+.myInfos s {
+	color: rgba(255, 255, 255, 0.582);
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.slotNumber {
+	width: 24px;
+	height: 24px;
+	padding: 6px 0 0;
+	font-size: 0.6rem;
+	text-align: center;
+	color: rgba(19,22,28,1.0);
+	background: rgba(255,255,255,0.75);
+}
+
+.topInfo {
+	display: flex;
+	position: absolute;
+	right: 14%;
+	justify-content: space-between;
+	padding-bottom: 25px;
+}
+
+.recipe {
+	font-size: 14px;
+	display: none;
+	color: #ffffffd3;
+	margin-right: 20px;
+	background: #1f1f1f44;
+	padding: 8px 12px 8px 5px;
+	height: 32px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
